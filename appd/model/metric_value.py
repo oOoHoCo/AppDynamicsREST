@@ -9,16 +9,19 @@ from appd.time import from_ts
 
 class MetricValue(JsonObject):
 
+
     FIELDS = {
         'current': '',
         'min': '',
         'max': '',
         'value': '',
+	'count': '',
+	'sum': '',
         'start_time_ms': 'startTimeInMillis'
     }
 
-    def __init__(self, current=0, value=0, min_value=0, max_value=0, start_time_ms=0):
-        (self.current, self.value, self.min, self.max, self.start_time_ms) = (current, value, min_value, max_value,
+    def __init__(self, current=0, value=0, min_value=0, max_value=0, count=0, sum=0, start_time_ms=0):
+        (self.current, self.value, self.min, self.max, self.count, self.sum, self.start_time_ms) = (current, value, min_value, max_value, count, sum,
                                                                               start_time_ms)
 
     @property
