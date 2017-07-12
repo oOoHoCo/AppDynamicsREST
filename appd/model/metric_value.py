@@ -14,8 +14,8 @@ class MetricValue(JsonObject):
         'min': '',
         'max': '',
         'value': '',
-	    'count': '',
-	    'sum': '',
+		'count': '',
+		'sum': '',
         'start_time_ms': 'startTimeInMillis'
     }
 
